@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kafene | Orders</title>
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/order.css">
+    </head>
+
+    <body>
+        <div id="nav-bar"></div>
+        <main>
+            <div class="PageWrapper">
+                <h1 class="MainHeading">Orders</h1>
+                <div class="OrdersWrapper">
+                    <div class="FilterWrapper">
+                        <h3>Filters</h3>
+                        <div class="FilterOptions">
+                            <p>Count: 
+                                <span id="count-elt"></span>
+                            </p>
+                            <label class="FilterCheckbox">
+                                <input type="checkbox" name="New">New</label>
+                            <label class="FilterCheckbox">
+                                <input type="checkbox" name="Packed">Packed</label>
+                            <label class="FilterCheckbox">
+                                <input type="checkbox" name="InTransit">InTransit</label>
+                            <label class="FilterCheckbox">
+                                <input type="checkbox" name="Delivered">Delivered</label>
+                        </div>
+                    </div>
+                    <div style="width: 100%;">
+                        <table class="OrderTable">
+                            <tr>
+                                <th>ID</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                            <tbody id="orders-table">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="./scripts/includeNavbar.js"></script>
+        <script src="./scripts/orders.js"></script>
+    </body>
+
+    </html>

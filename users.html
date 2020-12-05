@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/order.css">
+</head>
+
+<body>
+    <div id="nav-bar"></div>
+    <main>
+        <div class="PageWrapper">
+            <h1 class="MainHeading">Users</h1>
+            <div class="SearchBoxDiv">
+                <input type="text" class="SearchBox" name="search-text" id="search-text" placeholder="Search By Name"/>
+                <button class="ResetBtn" id="reset-search">Reset</button>
+            </div>
+            <div class="OrdersWrapper">
+                <div style="width: 100%;">
+                    <table class="OrderTable">
+                        <tr>
+                            <th>ID</th>
+                            <th>User Avatar</th>
+                            <th>Full Name</th>
+                            <th>DoB</th>
+                            <th>Gender</th>
+                            <th>Current Location</th>
+                        </tr>
+                        <tbody id="users-table">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="./scripts/includeNavbar.js"></script>
+    <script src="./scripts/users.js"></script>
+</body>
+
+</html>
